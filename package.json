@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ProjectProject1/React_Calculator#readme",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
