@@ -59,7 +59,29 @@ app.get('/api/data/req', function (req, res) {
     res.json(JSON.stringify(data));
 });
 
+// 04 데이터 요청
+app.get('/api/data/04', function (req, res) {
+    // res.send('Hello Elastic Beanstalk');
+    const data = {
+        value: 1
+    }
+    res.setHeader('Content-Type', 'application/json');
 
+    console.log(data);
+    res.json(JSON.stringify(data));
+});
+
+// 04 데이터 저장
+app.post('/api/data/04', function (req, res) {
+    // res.send('Hello Elastic Beanstalk');
+    const data = req.body;
+
+    // 데이터 저장하기
+    console.log(data);
+    root_data.num = data.value;
+
+    res.sendStatus(200);
+});
 
 app.listen(port, () => { 
     console.log(`Example app listening at http://localhost:${port}`);
