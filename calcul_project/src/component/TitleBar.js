@@ -47,15 +47,15 @@ function TitleBar(props) {
                     <button onClick={menuClick} >
                         <FontAwesomeIcon icon={menuIcon} size="3x" />
                     </button>
-                    <button onClick={props.loadButtonClick}>
+                    {/* <button onClick={props.loadButtonClick}>
                         <text>마지막 결과값 불러오기</text>
-                    </button>
+                    </button> */}
                 </div>
                 <div className="column center" style={style.title}>Calculator</div>
                 <div className="column right">
-                    <button>
+                    {/* <button>
                         <text>랜덤 탬플릿색상 변경 </text>
-                    </button>
+                    </button> */}
                     <button onClick={dayClick} className="title theme" style={style.themeButton}>
                         <FontAwesomeIcon icon={dayIcon} size="3x" />
                     </button>
